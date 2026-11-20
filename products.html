@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | SmartTech Electronics</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/cart.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="logo"><span>SmartTech</span> Electronics</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="register.html">Register</a>
+    </nav>
+</header>
+
+<main class="page-container">
+    <section class="page-heading">
+        <h1>Our Electronic Products</h1>
+        <p>Explore our selection of quality electronics at affordable prices.</p>
+        <p class="cart-display">Items in Cart: <span id="cart-count">0</span></p>
+    </section>
+
+    <section class="product-container">
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600" alt="Laptop computer">
+            <h3>Laptop</h3>
+            <p>Reliable laptop suitable for education, business and entertainment.</p>
+            <p class="price">KES 65,000</p>
+            <button class="small-btn cart-button" data-product="Laptop">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600" alt="Smartphone">
+            <h3>Smartphone</h3>
+            <p>Modern smartphone with useful features and excellent connectivity.</p>
+            <p class="price">KES 35,000</p>
+            <button class="small-btn cart-button" data-product="Smartphone">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=600" alt="Printer">
+            <h3>Printer</h3>
+            <p>Efficient printer for home, school and office printing needs.</p>
+            <p class="price">KES 18,000</p>
+            <button class="small-btn cart-button" data-product="Printer">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600" alt="Computer keyboard">
+            <h3>Keyboard</h3>
+            <p>Comfortable computer keyboard for everyday typing and work.</p>
+            <p class="price">KES 2,500</p>
+            <button class="small-btn cart-button" data-product="Keyboard">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=600" alt="Computer monitor">
+            <h3>Monitor</h3>
+            <p>Clear display monitor suitable for office and personal computing.</p>
+            <p class="price">KES 22,000</p>
+            <button class="small-btn cart-button" data-product="Monitor">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600" alt="Headphones">
+            <h3>Headphones</h3>
+            <p>Comfortable headphones for music, communication and entertainment.</p>
+            <p class="price">KES 4,500</p>
+            <button class="small-btn cart-button" data-product="Headphones">Add to Cart</button>
+        </div>
+
+    </section>
+
+    <section class="table-section">
+        <h2>Product Inventory Table</h2>
+        <p>The following table displays product identification, category, price and available stock.</p>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="5">SmartTech Electronics - Product Inventory</th>
+                    </tr>
+                    <tr>
+                        <th>Product ID</th>
+                        <th>Product Name</th>
+                        <th>Category</th>
+                        <th>Price (KES)</th>
+                        <th>Stock</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>P001</td>
+                        <td>Laptop</td>
+                        <td>Computers</td>
+                        <td>65,000</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>P002</td>
+                        <td>Smartphone</td>
+                        <td>Mobile Devices</td>
+                        <td>35,000</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>P003</td>
+                        <td>Printer</td>
+                        <td rowspan="2">Accessories</td>
+                        <td>18,000</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>P004</td>
+                        <td>Keyboard</td>
+                        <td>2,500</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>P005</td>
+                        <td>Monitor</td>
+                        <td>Computers</td>
+                        <td>22,000</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>P006</td>
+                        <td>Headphones</td>
+                        <td>Accessories</td>
+                        <td>4,500</td>
+                        <td>18</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Contact: info@smarttech.co.ke | Phone: +254 700 000 000</p>
+    <p>&copy; 2026 SmartTech Electronics. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

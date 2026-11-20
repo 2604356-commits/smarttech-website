@@ -1,0 +1,494 @@
+
+/* =====================================
+   SMARTTECH ELECTRONICS WEBSITE
+   Complete Website Styling
+===================================== */
+
+/* 1. GENERAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 2. HEADER AND NAVIGATION */
+header {
+    background-color: #092c50;
+    color: white;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ffb703;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ffb703;
+}
+
+/* 3. HOMEPAGE HERO SECTION */
+.hero {
+    min-height: 430px;
+    background:
+        linear-gradient(rgba(4, 30, 58, 0.75),
+        rgba(4, 30, 58, 0.75)),
+        url("https://images.unsplash.com/photo-1498049794561-7780e7231661?w=1600")
+        center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+/* 4. BUTTONS */
+.btn,
+.small-btn {
+    display: inline-block;
+    background-color: #ffb703;
+    color: #092c50;
+    padding: 12px 22px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover,
+.small-btn:hover {
+    background-color: #e09b00;
+    transform: translateY(-2px);
+}
+
+/* 5. HOMEPAGE PROMOTIONS */
+.promotions {
+    padding: 55px 7%;
+    text-align: center;
+}
+
+.promotions h2,
+.why-us h2 {
+    color: #092c50;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.section-intro {
+    margin-bottom: 30px;
+}
+
+/* 6. PRODUCT CARDS */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    color: #092c50;
+    margin: 15px;
+}
+
+.product-card p {
+    padding: 0 15px;
+}
+
+/* 7. WHY CHOOSE US */
+.why-us {
+    background-color: #e6eef7;
+    padding: 50px 7%;
+    text-align: center;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.features div {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.features h3 {
+    color: #0b477b;
+    margin-bottom: 10px;
+}
+
+/* 8. FOOTER */
+footer {
+    background-color: #092c50;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 30px;
+}
+
+/* 9. INNER PAGES */
+.page-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 35px auto;
+    min-height: 450px;
+}
+
+.page-heading {
+    text-align: center;
+    padding: 30px 15px;
+    margin-bottom: 25px;
+}
+
+.page-heading h1 {
+    color: #092c50;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.page-heading p {
+    color: #555;
+}
+
+/* 10. ABOUT US PAGE */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.about-content img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.about-content h2 {
+    color: #0b477b;
+    margin-bottom: 8px;
+    margin-top: 12px;
+}
+
+/* 11. INFORMATION CARDS */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin: 35px 0;
+}
+
+.info-card {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 9px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    border-bottom: 4px solid #ffb703;
+}
+
+.info-card h3 {
+    color: #092c50;
+    margin-bottom: 10px;
+}
+
+/* 12. PRODUCT PAGE */
+.price {
+    color: #0b477b;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.cart-display {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #092c50;
+}
+
+.cart-button {
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* 13. PRODUCT INVENTORY TABLE */
+.table-section {
+    margin: 50px 0;
+}
+
+.table-section h2 {
+    text-align: center;
+    color: #092c50;
+    margin-bottom: 12px;
+}
+
+.table-section p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td {
+    border: 1px solid #cbd5e1;
+    padding: 13px;
+    text-align: center;
+}
+
+th {
+    background: #092c50;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: #eaf1f8;
+}
+
+tbody tr:hover {
+    background: #dce9f5;
+}
+
+/* 14. SERVICES PAGE */
+.service-banner {
+    text-align: center;
+    background: #e6eef7;
+    padding: 35px;
+    border-radius: 10px;
+    margin: 35px 0;
+}
+
+.service-banner h2 {
+    color: #092c50;
+    margin-bottom: 10px;
+}
+
+/* 15. CONTACT PAGE */
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.contact-details,
+.form-card {
+    background: white;
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.contact-details h2,
+.form-card h2 {
+    color: #092c50;
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    margin-bottom: 15px;
+}
+
+/* 16. FORMS */
+.form-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-card label {
+    font-weight: bold;
+    margin: 12px 0 6px;
+    color: #092c50;
+}
+
+.form-card input,
+.form-card textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.form-card input:focus,
+.form-card textarea:focus {
+    outline: 2px solid #ffb703;
+    border-color: #092c50;
+}
+
+/* 17. GENDER RADIO BUTTONS */
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: 8px 0;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.radio-group input {
+    width: auto;
+}
+
+/* 18. FORM BUTTONS */
+.form-button,
+.reset-button {
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.form-button {
+    background: #092c50;
+    color: white;
+}
+
+.reset-button {
+    background: #e2e8f0;
+    color: #092c50;
+}
+
+.form-button:hover {
+    background: #0b477b;
+}
+
+.reset-button:hover {
+    background: #cbd5e1;
+}
+
+/* 19. REGISTRATION FORM */
+.registration-card {
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+/* 20. RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 40px 6%;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .product-container,
+    .features,
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content,
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .page-heading h1 {
+        font-size: 26px;
+    }
+
+    .radio-group {
+        flex-direction: column;
+    }
+
+}

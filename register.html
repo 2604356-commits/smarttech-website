@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | SmartTech Electronics</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="logo"><span>SmartTech</span> Electronics</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="register.html" class="active">Register</a>
+    </nav>
+</header>
+
+<main class="page-container">
+    <section class="page-heading">
+        <h1>Customer Registration</h1>
+        <p>Create an account with SmartTech Electronics.</p>
+    </section>
+
+    <section class="form-card registration-card">
+        <form onsubmit="alert('Registration form submitted successfully for this demonstration. Your information has not been stored on a server.'); return false;">
+
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname"
+                   placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email"
+                   placeholder="example@email.com" required>
+
+            <label for="telephone">Telephone Number</label>
+            <input type="tel" id="telephone" name="telephone"
+                   placeholder="+254 700 000 000"
+                   pattern="[+0-9 ]{10,15}" required>
+
+            <label>Gender</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="Male" required> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Other"> Other</label>
+            </div>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username"
+                   minlength="4" placeholder="Choose a username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password"
+                   minlength="8" placeholder="Minimum 8 characters" required>
+
+            <label for="address">Physical Address</label>
+            <textarea id="address" name="address" rows="4"
+                      placeholder="Enter your physical address" required></textarea>
+
+            <button type="submit" class="form-button">Register</button>
+            <button type="reset" class="reset-button">Reset Form</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>Contact: info@smarttech.co.ke | Phone: +254 700 000 000</p>
+    <p>&copy; 2026 SmartTech Electronics. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
